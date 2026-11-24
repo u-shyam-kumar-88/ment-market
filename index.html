@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Campus essentials, study gear, and student marketplace finds. Shop Ment Market's curated college collection.">
+    <meta name="theme-color" content="#f5f2eb">
+    <title>Ment Market | Campus & Student Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>Built for students & campus life <span aria-hidden="true">·</span> Free hostel & campus delivery over INR 999</p>
+    </div>
+
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Ment Market home">
+                <span class="brand-mark" aria-hidden="true">M</span>
+                <span>MENT <span class="brand-light">MARKET</span></span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="menu-icon" aria-hidden="true"></span>
+            </button>
+
+            <div class="nav-links" id="primary-navigation">
+                <a href="#shop">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#our-story">Our story</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+
+            <div class="nav-actions">
+                <a class="search-shortcut" href="#shop" aria-label="Search products">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                </a>
+                <button class="cart-button" id="open-cart" type="button" aria-label="Open shopping bag, 0 items">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+                    <span class="cart-label">Bag</span>
+                    <span class="cart-count" id="cart-count" aria-live="polite">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero section-wrap">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> CAMPUS ESSENTIALS & MORE</p>
+                <h1>Upgrade your <em>everyday</em> college life.</h1>
+                <p class="hero-description">Smart study gear, dorm comforts, and project kits curated by students, for students.</p>
+                <div class="hero-actions">
+                    <a class="button button-dark" href="#shop">Shop the collection <span aria-hidden="true">↗</span></a>
+                    <a class="quiet-link" href="#our-story">Get to know Ment <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="hero-note">
+                    <span class="note-stars" aria-hidden="true">★★★★★</span>
+                    <span>Student-approved finds, curated for campus</span>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&q=85" alt="Warm living room with natural textures and neutral decor">
+                <div class="hero-sticker">
+                    <span>STUDY</span>
+                    <span>BUILD</span>
+                    <span>THRIVE</span>
+                </div>
+                <div class="hero-caption">
+                    <span>THE CAMPUS EDIT</span>
+                    <span>01 / 04</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="promise-strip" aria-label="Ment Market promises">
+            <div><span class="promise-icon" aria-hidden="true">✳</span><span>Made for everyday campus life</span></div>
+            <div><span class="promise-icon" aria-hidden="true">↗</span><span>Free campus delivery over INR 999</span></div>
+            <div><span class="promise-icon" aria-hidden="true">♡</span><span>Student-tested, budget-friendly</span></div>
+        </section>
+
+        <section class="section-wrap categories-section" id="categories">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">BROWSE BY NEED</p>
+                    <h2>Gear up for <em>campus.</em></h2>
+                </div>
+                <a class="quiet-link" href="#shop">Shop everything <span aria-hidden="true">→</span></a>
+            </div>
+
+            <div class="category-grid">
+                <button class="category-card category-living" type="button" data-category-jump="living">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=80" alt="">
+                    <span class="category-label"><span>Desk & Study</span><span aria-hidden="true">↗</span></span>
+                </button>
+                <button class="category-card category-kitchen" type="button" data-category-jump="kitchen">
+                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="">
+                    <span class="category-label"><span>Hostel & Brew</span><span aria-hidden="true">↗</span></span>
+                </button>
+                <button class="category-card category-decor" type="button" data-category-jump="decor">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=900&q=80" alt="">
+                    <span class="category-label"><span>Tech & Kits</span><span aria-hidden="true">↗</span></span>
+                </button>
+            </div>
+        </section>
+
+        <section class="shop-section" id="shop">
+            <div class="section-wrap shop-inner">
+                <div class="section-heading shop-heading">
+                    <div>
+                        <p class="eyebrow">STUDENT PICKS</p>
+                        <h2>Smart gear, <em>better days.</em></h2>
+                    </div>
+                    <label class="search-field">
+                        <span class="sr-only">Search products</span>
+                        <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+                        <input id="product-search" type="search" placeholder="Find your next favorite" autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="shop-toolbar">
+                    <div class="filter-list" role="group" aria-label="Filter products by category">
+                        <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All gear</button>
+                        <button class="filter-button" type="button" data-filter="living" aria-pressed="false">Study</button>
+                        <button class="filter-button" type="button" data-filter="kitchen" aria-pressed="false">Hostel</button>
+                        <button class="filter-button" type="button" data-filter="decor" aria-pressed="false">Tech</button>
+                        <button class="filter-button" type="button" data-filter="lighting" aria-pressed="false">Lighting</button>
+                    </div>
+                    <p class="results-count" id="results-count" aria-live="polite">8 campus finds</p>
+                </div>
+
+                <div class="product-grid" id="product-grid">
+                    <article class="product-card" data-product-id="linen-throw" data-category="living" data-price="2490">
+                        <div class="product-image">
+                            <span class="product-badge">Bestseller</span>
+                            <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=80" alt="Soft neutral throw styled on a cozy sofa" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Woven Linen Throw to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Desk & Study</span><span>Aluminum build</span></div>
+                        <div class="product-title-row"><h3>Ergonomic Laptop Stand</h3><span class="product-price">INR 2,490</span></div>
+                        <p class="product-detail">Better posture for long coding & study sessions.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="stoneware-set" data-category="kitchen" data-price="1890">
+                        <div class="product-image">
+                            <span class="product-badge product-badge-quiet">Small batch</span>
+                            <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=900&q=80" alt="Handmade ceramic stoneware plates and bowls" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Everyday Stoneware Set to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Kitchen</span><span>Double-wall steel</span></div>
+                        <div class="product-title-row"><h3>Insulated Coffee Tumbler</h3><span class="product-price">INR 1,890</span></div>
+                        <p class="product-detail">Keeps late-night study fuel hot through morning lectures.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="arc-table-lamp" data-category="lighting" data-price="3290">
+                        <div class="product-image">
+                            <span class="product-badge">New</span>
+                            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=900&q=80" alt="Sculptural table lamp casting a warm glow" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Arc Table Lamp to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Lighting</span><span>Warm glow</span></div>
+                        <div class="product-title-row"><h3>Minimalist Desk Lamp</h3><span class="product-price">INR 3,290</span></div>
+                        <p class="product-detail">Eye-care warm lighting for midnight exam prep.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="clay-vase" data-category="decor" data-price="1290">
+                        <div class="product-image">
+                            <span class="product-badge product-badge-quiet">Made slowly</span>
+                            <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=900&q=80" alt="Sculptural clay vase with a simple branch" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Sunday Clay Vase to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Decor</span><span>Project ready</span></div>
+                        <div class="product-title-row"><h3>IoT & Sensor Starter Kit</h3><span class="product-price">INR 1,290</span></div>
+                        <p class="product-detail">Everything you need to prototype your next hackathon build.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="woven-basket" data-category="living" data-price="1590">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80" alt="Natural woven storage basket in a calm living space" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Sunday Woven Basket to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Desk & Study</span><span>Water-resistant</span></div>
+                        <div class="product-title-row"><h3>Canvas Tech Organizer</h3><span class="product-price">INR 1,590</span></div>
+                        <p class="product-detail">Keeps chargers, drives, and cables tangle-free in your bag.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="glass-carafe" data-category="kitchen" data-price="990">
+                        <div class="product-image">
+                            <span class="product-badge product-badge-quiet">Everyday favorite</span>
+                            <img src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?auto=format&fit=crop&w=900&q=80" alt="Dining table styled with everyday serving pieces" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Clear Day Carafe to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Kitchen</span><span>Infuser included</span></div>
+                        <div class="product-title-row"><h3>Borosilicate Study Flask</h3><span class="product-price">INR 990</span></div>
+                        <p class="product-detail">Stay hydrated from first lab to evening practice.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="oak-board" data-category="kitchen" data-price="1390">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1603199506016-b9a594b593c0?auto=format&fit=crop&w=900&q=80" alt="Wooden serving board ready for a shared meal" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add Gather Oak Serving Board to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Kitchen</span><span>Recycled felt</span></div>
+                        <div class="product-title-row"><h3>Acoustic Desk Mat</h3><span class="product-price">INR 1,390</span></div>
+                        <p class="product-detail">Defines your workspace and dampens keyboard noise.</p>
+                    </article>
+
+                    <article class="product-card" data-product-id="candle-duo" data-category="decor" data-price="790">
+                        <div class="product-image">
+                            <span class="product-badge">Little treat</span>
+                            <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=900&q=80" alt="Hand-poured candle in a simple glass jar" loading="lazy">
+                            <button class="quick-add" type="button" data-add-to-cart aria-label="Add After Hours Candle Duo to bag">+</button>
+                        </div>
+                        <div class="product-meta"><span>Decor</span><span>Pomodoro ready</span></div>
+                        <div class="product-title-row"><h3>Focus Timer & Note Block</h3><span class="product-price">INR 790</span></div>
+                        <p class="product-detail">Stay locked in during deep-work sprints.</p>
+                    </article>
+                </div>
+
+                <p class="empty-results" id="empty-results" hidden>No finds match that search. Try another word or category.</p>
+                <p class="demo-note">College project prototype — sample products and student pricing.</p>
+            </div>
+        </section>
+
+        <section class="offer-banner section-wrap">
+            <div class="offer-image">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=85" alt="Relaxed home interior with warm natural materials" loading="lazy">
+            </div>
+            <div class="offer-copy">
+                <p class="eyebrow">STUDENT BUNDLE DEAL</p>
+                <h2>Semester prep is better <em>together.</em></h2>
+                <p>Bundle any two hostel or study essentials and get 15% off with your college ID.</p>
+                <a class="button button-light" href="#shop" data-category-jump="kitchen">Find your pair <span aria-hidden="true">↗</span></a>
+                <span class="offer-fineprint">College project demo — sample student promotion.</span>
+            </div>
+        </section>
+
+        <section class="section-wrap story-section" id="our-story">
+            <div class="story-copy">
+                <p class="eyebrow">ABOUT MENT MARKET</p>
+                <h2>Built by students, <em>for campus life.</em></h2>
+                <p>Ment Market started as a college project to make practical study gear, hostel upgrades, and hackathon kits accessible and affordable—all in one clean campus storefront.</p>
+                <a class="quiet-link" href="#categories">Explore campus categories <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?auto=format&fit=crop&w=1100&q=85" alt="Sunlit home with carefully chosen furniture and plants" loading="lazy">
+                <span class="story-caption">SMART GEAR SHOULD MAKE CAMPUS LIFE EFFORTLESS.</span>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews">
+            <div class="section-wrap">
+                <div class="section-heading reviews-heading">
+                    <div>
+                        <p class="eyebrow">CAMPUS BUZZ</p>
+                        <h2>Notes from <em>fellow students.</em></h2>
+                    </div>
+                    <p class="review-disclaimer">Sample student reviews for this college project.</p>
+                </div>
+                <div class="review-grid">
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>“The laptop stand and desk mat completely transformed my hostel study corner.”</blockquote>
+                        <p class="review-author">Mira K. <span>· 2nd Year CSE</span></p>
+                    </article>
+                    <article class="review-card review-card-featured">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>“Fast campus delivery and super affordable. The tumbler survives 8 AM classes easily.”</blockquote>
+                        <p class="review-author">Rohan S. <span>· 3rd Year ECE</span></p>
+                    </article>
+                    <article class="review-card">
+                        <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>“Grabbed the starter kit for our mini-project expo—clean UI and great concept!”</blockquote>
+                        <p class="review-author">Anya P. <span>· 1st Year AI & ML</span></p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section section-wrap">
+            <div>
+                <p class="eyebrow">CAMPUS DROPS</p>
+                <h2>New semester gear <em>in your inbox.</em></h2>
+                <p>Restocks, project kits, and exclusive student discounts.</p>
+            </div>
+            <form class="newsletter-form" id="newsletter-form">
+                <label class="sr-only" for="newsletter-email">Your email address</label>
+                <input id="newsletter-email" name="email" type="email" placeholder="Your email address" autocomplete="email" required>
+                <button type="submit" aria-label="Join the Ment Market newsletter">Join us <span aria-hidden="true">→</span></button>
+                <p class="newsletter-status" id="newsletter-status" role="status" aria-live="polite">Demo only — signups are not sent or stored.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-wrap footer-main">
+            <div class="footer-brand">
+                <a class="brand" href="#home" aria-label="Ment Market home">
+                    <span class="brand-mark" aria-hidden="true">M</span>
+                    <span>MENT <span class="brand-light">MARKET</span></span>
+                </a>
+                <p>Campus essentials & student marketplace — College Project.</p>
+            </div>
+            <div class="footer-links">
+                <div><h2>Explore</h2><a href="#shop">Shop all</a><a href="#categories">Categories</a><a href="#reviews">Reviews</a></div>
+                <div><h2>Stay in touch</h2><a href="#our-story">Our story</a><a href="#newsletter-form">Newsletter</a><a href="#home">Back to top ↑</a></div>
+            </div>
+        </div>
+        <div class="section-wrap footer-bottom">
+            <span>© 2026 Ment Market · College Project</span>
+            <span>Built for students, by students.</span>
+        </div>
+    </footer>
+
+    <div class="cart-backdrop" id="cart-backdrop" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title" hidden>
+        <div class="cart-header">
+            <div><p class="eyebrow">YOUR GOOD THINGS</p><h2 id="cart-title">Shopping bag <span id="drawer-count">(0)</span></h2></div>
+            <button class="cart-close" id="close-cart" type="button" aria-label="Close shopping bag">×</button>
+        </div>
+        <div class="cart-content">
+            <p class="cart-empty" id="cart-empty">Your bag is taking a quiet moment. Add something lovely to get started.</p>
+            <ul class="cart-items" id="cart-items"></ul>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-subtotal"><span>Subtotal</span><strong id="cart-subtotal">INR 0</strong></div>
+            <p class="cart-demo-note">Demo bag only. Checkout and payments are not connected.</p>
+            <button class="button button-dark checkout-button" type="button" disabled>Checkout <span aria-hidden="true">↗</span></button>
+            <button class="continue-shopping" id="continue-shopping" type="button">Continue browsing</button>
+        </div>
+    </aside>
+    <p class="sr-only" id="cart-status" role="status" aria-live="polite"></p>
+</body>
+</html>
